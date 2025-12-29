@@ -3,9 +3,9 @@
   "type": "module",
   "version": "9.0.0",
   "scripts": {
-    "dev-thnlqd": "astro dev --host --config astro.config.thnlqd.ts",
+    "dev-thnlqd": "astro dev --host",
     "dev-milktea": "astro dev --host --config astro.config.milktea.ts",
-    "build-thnlqd": "astro check --config astro.config.thnlqd.ts && astro build --config astro.config.thnlqd.ts",
+    "build-thnlqd": "astro check && astro build",
     "build-milktea": "astro check --config astro.config.milktea.ts && astro build --config astro.config.milktea.ts",
 
     "build": "npm run build-thnlqd",
