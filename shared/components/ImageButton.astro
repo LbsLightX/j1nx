@@ -1,0 +1,35 @@
+---
+interface Props {
+  url: string
+  href?: string
+  alt: string
+  style?: string
+  [key: string]: any
+}
+
+const { url, href, alt, style, ...props } = Astro.props
+---
+<a href={href} {...props} style={style}>
+  <img width="88" height="31" src={url} alt={alt} data-tooltip={alt} style={style} />
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+    padding: 0!important;
+    background: none!important;
+    display: inline-block;
+    transition: transform .2s var(--bounce);
+    width: max-content;
+    font-size: 0;
+    width: 88px;
+    height: 31px;
+
+    &:hover {
+      background: none!important;
+      transform: scale(1.2);
+      transform-origin: center;
+      z-index: 1000;
+    }
+  }
+</style>

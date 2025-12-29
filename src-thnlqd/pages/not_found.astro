@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../../shared/layouts/Layout.astro";
+import Card from "../../shared/components/Card.astro";
+import site from "../site";
+---
+
+<Layout hue={360} site={site}>
+  <Card>
+    <h1 style={{ margin: 0 }}>HTTP 404</h1>
+    <div style={{ padding: '2px 0' }}></div>
+    <dl>
+      <dt style={{ opacity: 0.75 }}>noun</dt>
+      <dd>
+        an error indicating that a web page could not be found.
+        <blockquote style={{ opacity: 0.75 }}>"Some search engine marketers suggest redirecting old products to semantically related products instead of 404ing."</blockquote>
+      </dd>
+    </dl>
+    <hr/>
+    <p>
+      <small><Icon name="pixelarticons:open" /> <a href="https://en.wiktionary.org/wiki/404">Wiktionary</a></small>
+    </p>
+  </Card>
+  <p>
+    have you lost your way? head <a href="/">home</a> or return to the <a href="javascript:void(0)" onclick="window.history.back()">previous page</a>.
+  </p>
+</Layout>
